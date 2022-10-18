@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width":  {
+          "step": 40
+      },
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/chrislou415/data/main/TOP10.csv"
+    },
+  
+  
+    "mark": "bar",
+  
+    "encoding": {
+      "x": {"field": "Entity", "type": "nominal", "title": "Country"},
+      "y": {
+        "field": "Deaths",
+        "type": "quantitative",
+        "axis": {"tickCount": 6},
+        "scale": { "domain": [1, 350000]}
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal"},
+        {"field": "Deaths", "type": "quantitative", "format": ","},
+        {"field": "Historical_Population", "type": "quantitative", "format": ","}
+      ]
+    }
+  }

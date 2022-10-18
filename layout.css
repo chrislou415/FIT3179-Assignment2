@@ -1,0 +1,147 @@
+html,
+body {
+    background-color: #ffffff;
+}
+
+
+.headline{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.head-image{ 
+    margin-bottom:40px;
+    text-align: center;
+}
+
+.headtext {
+    font-family: 'Noto Serif Gujarati', serif;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #000000;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.profile{
+    text-align: left;
+    width: 80px;
+    margin-left: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.date{
+    font-family: 'Noto Serif Gujarati', serif;
+    margin-left: 450px;
+    font-size: 14px;
+    letter-spacing: 0.2pt;
+    color: #000000e2;
+    margin-bottom: -80px;
+    line-height: 20pt;
+}
+
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-left: 450px;
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+li{
+    margin-left: 450px;
+    margin-right: 350px;
+    font-size: 16px;
+    line-height: 24pt;
+    font-weight: bold;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #000409;
+    text-align: left;
+    margin-left: 450px;
+    margin-right: 450px;
+    font-size: 16px;
+    line-height: 20pt;
+    letter-spacing: 0.2pt;
+    margin-bottom: 40px;
+}
+
+.figuretext{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 450px;
+    margin-right: 450px;
+    font-size: 13px;
+    letter-spacing: 0.2pt;
+    color: #545151e2;
+    margin-bottom: 30px;
+}
+
+
+#first_chart{ 
+    margin-left: 450px;
+    margin-right: 450px;
+	margin-bottom: 10px;
+}
+
+#second_chart{ 
+    margin-left: 450px;
+    margin-right: 450px;
+	margin-bottom: 10px;
+}
+
+#third_chart{ 
+    margin-left: 450px;
+    margin-right: 450px;
+	margin-bottom: 10px;
+}
+
+#fourth_chart{ 
+    margin-left: 450px;
+    margin-right: 450px;
+	margin-bottom: 10px;
+}
+
+#fifth_chart{ 
+    margin-left: 450px;
+    margin-right: 450px;
+	margin-bottom: 10px;
+}
+
+.baseline{
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Noto Serif Gujarati', serif;
+}
+
+.description{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color:gray;
+}
+
+.China{
+    color:#C85454;
+}
+
+.India{
+    color:#54C884;
+}
+
+.Brazil{
+    color:#5486C8;
+}
+
+.Russia{
+    color:#437ea0;
+}

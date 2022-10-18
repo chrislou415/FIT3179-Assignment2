@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "width": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/chrislou415/data/main/three%20countries.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.Deaths/datum.Historical_Population*1000000",
+      "as": "Road Deaths per Million Population"
+    }
+  ],
+  "mark": {"type": "line", "point": {"filled": false, "fill": "white"}},
+  "encoding": {
+    "x": {"timeUnit": "year", "field": "Year"},
+    "y": {
+      "field": "Road Deaths per Million Population",
+      "title":"Road Deaths per Million",
+      "type": "quantitative",
+      "scale": {"domain": [100, 350]}
+    },
+    "color": {"field": "Entity", "type": "nominal","scale": {
+        "domain": [
+          "China",
+          "India",
+          "Brazil"
+        ],
+        "range": [
+          "#C85454",
+          "#54C884",
+          "#5486C8"
+        ]
+      }},
+
+    "tooltip": [
+      {"field": "Deaths", "type": "quantitative", "format": ","},
+      {
+        "field": "Road Deaths per Million Population",
+        "type": "quantitative",
+        "format": ".0f",
+        "title": "Road Deaths per 1000,000"
+      },
+      {
+        "field": "Year",
+        "type": "nominal",
+        "format": ",",
+        "title": "Year"
+      }
+    ]
+  }
+}

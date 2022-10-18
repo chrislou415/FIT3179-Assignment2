@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Top 20 Road Traffic Death Country (2022)",
+    
+  "width": 340,
+  "height": 400,
+  "background": "#ffffff",
+
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/chrislou415/data/main/Death%20Cause%20Reason%20by%20Country.csv"
+  },
+  "params": [
+    {
+      "name": "Size_Above",
+      "value": 10000,
+      "bind": {
+        "input": "range",
+        "min": 10000,
+        "max": 42000,
+        "step": 4000,
+        "name": "Range Selection: "
+      }
+      
+    }
+  ],
+  "transform": [
+    {
+      "aggregate": [
+        {"op": "median", "field": "Road injuries", "as": "median_accommodate"}
+      ],
+      "groupby": ["Country Name"]
+    },
+    {"filter": "datum.median_accommodate > Size_Above"}
+  ],
+  "mark": {"type": "bar"},
+  "encoding": {
+    "color":{
+      "condition":[
+      {"test":"datum['Country Name']=='China'","value":"#C85454"},
+      {"test":"datum['Country Name']=='Brazil'","value":"#5486C8"},
+      {"test":"datum['Country Name']=='India'","value":"#54C884"},
+      {"test":"datum['Country Name']=='Egypt'","value":"#ce9e65"},
+      {"test":"datum['Country Name']=='Indonesia'","value":"#C854B4"},
+      {"test":"datum['Country Name']=='Vietnam'","value":"#A9C854"},
+      {"test":"datum['Country Name']=='Saudi Arabia'","value":"#C89354"},
+      {"test":"datum['Country Name']=='Mexico'","value":"#324c78"},
+      {"test":"datum['Country Name']=='Russia'","value":"#437ea0"},
+              {"test":"datum['Country Name']=='Iran'","value":"#c4aae4"},
+              {"test":"datum['Country Name']=='United States'","value":"#7E57C2"},
+              {"test":"datum['Country Name']=='Democratic Republic of Congo'","value":"#783232"},
+              {"test":"datum['Country Name']=='Thailand'","value":"#C85482"},
+              {"test":"datum['Country Name']=='Pakistan'","value":"#32784b"},
+              {"test":"datum['Country Name']=='South Africa'","value":"#26C6DA"},
+              {"test":"datum['Country Name']=='Nigeria'","value":"#996633"},
+              {"test":"datum['Country Name']=='Yemen'","value":"#523278 "},
+              {"test":"datum['Country Name']=='Algeria'","value":"#54C8AE"},
+              {"test":"datum['Country Name']=='Bangladesh'","value":"#d0de98"}
+    ]
+    },
+    
+    "y": {
+      "field": "Country Name",
+      "type": "nominal",
+      "Country Name": "Countrys",
+      "sort": "-x"
+    },
+    "x": {
+      "type": "quantitative",
+      "Country Name": "Road Deaths",
+      "field": "median_accommodate"
+    },
+  "tooltip": [
+      {"field": "Country Name", "type": "nominal"},
+      {"field": "median_accommodate", "type": "quantitative","Country Name":"Road Deaths", "format": ","}
+    ]
+  }
+}
