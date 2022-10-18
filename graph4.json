@@ -4,126 +4,74 @@
     "values": [
       {
         "title": "China",
-        "ranges": [
-          1500000000
-        ],
-        "measures": [
-          250025,
-          1433783692
-        ]
+        "ranges": [1500000000],
+        "measures": [250025, 1433783692]
       },
       {
         "title": "India",
-        "ranges": [
-          1500000000
-        ],
-        "measures": [
-          211975,
-          1366417756
-        ]
+        "ranges": [1500000000],
+        "measures": [211975, 1366417756]
       },
       {
         "title": "United States",
-        "ranges": [
-          1500000000
-        ],
-        "measures": [
-          41362,
-          329064917
-        ]
+        "ranges": [1500000000],
+        "measures": [41362, 329064917]
       },
       {
         "title": "Indonesia",
-        "ranges": [
-          1500000000
-        ],
-        "measures": [
-          37004,
-          270625567
-        ]
+        "ranges": [1500000000],
+        "measures": [37004, 270625567]
       },
       {
         "title": "Pakistan",
-        "ranges": [
-          1500000000
-        ],
-        "measures": [
-          19348,
-          216565317
-        ]
+        "ranges": [1500000000],
+        "measures": [19348, 216565317]
       },
       {
         "title": "Brazil",
-        "ranges": [
-          1500000000
-        ],
-        "measures": [
-          44529,
-          211049519
-        ]
+        "ranges": [1500000000],
+        "measures": [44529, 211049519]
       },
       {
         "title": "Nigeria",
-        "ranges": [
-          1500000000
-        ],
-        "measures": [
-          18508,
-          200963603
-        ]
+        "ranges": [1500000000],
+        "measures": [18508, 200963603]
       },
       {
         "title": "Bangladesh",
-        "ranges": [
-          1500000000
-        ],
-        "measures": [
-          8612,
-          163046173
-        ]
+        "ranges": [1500000000],
+        "measures": [8612, 163046173]
       },
       {
         "title": "Russia",
-        "ranges": [
-          1500000000
-        ],
-        "measures": [
-          20867,
-          145872260
-        ]
+        "ranges": [1500000000],
+        "measures": [20867, 145872260]
       },
       {
         "title": "Mexico",
-        "ranges": [
-          1500000000
-        ],
-        "measures": [
-          21103,
-          127575529
-        ]
+        "ranges": [1500000000],
+        "measures": [21103, 127575529]
       }
     ]
   },
+
+
   "facet": {
     "row": {
       "field": "title",
       "type": "ordinal",
-      "header": {
-        "labelAngle": 0,
-        "title": "Countrys"
-      }
+      "header": {"labelAngle": 0, "title": "Countrys"},
+       "sort": {"op": "sum", "field": "measures[2]"}
     }
   },
+
+  
   "spacing": 10,
+
+
   "spec": {
     "encoding": {
-      "x": {
-        "type": "quantitative",
-        "scale": {
-          "nice": false
-        },
-        "title": null
-      },
+      "x": {"type": "quantitative", "scale": {"nice": false}, "title": null},
       "tooltip": [
         {
           "field": "measures[1]",
@@ -139,62 +87,53 @@
         }
       ]
     },
+
+
+
     "layer": [
       {
-        "mark": {
-          "type": "bar"
-        },
+        "mark": {"type": "bar", "color": "white"},
         "encoding": {
-          "x": {
-            "field": "ranges[0]"
-          },
+          "x": {"field": "ranges[0]"},
           "color": {
             "condition": [
-              {"test":"datum['title']=='China'","value":"#C85454"},
-              {"test":"datum['title']=='Brazil'","value":"#5486C8"},
-              {"test":"datum['title']=='India'","value":"#54C884"},
-              {"test":"datum['title']=='Egypt'","value":"#ce9e65"},
-              {"test":"datum['title']=='Indonesia'","value":"#C854B4"},
-              {"test":"datum['title']=='Vietnam'","value":"#A9C854"},
-              {"test":"datum['title']=='Saudi Arabia'","value":"#C89354"},
-              {"test":"datum['title']=='Mexico'","value":"#324c78"},
-              {"test":"datum['title']=='Russia'","value":"#54C8AE"},
-              {"test":"datum['title']=='Iran'","value":"#c4aae4"},
-              {"test":"datum['title']=='United States'","value":"#7E57C2"},
-              {"test":"datum['title']=='Democratic Republic of Congo'","value":"#783232"},
-              {"test":"datum['title']=='Thailand'","value":"#C85482"},
-              {"test":"datum['title']=='Pakistan'","value":"#32784b"},
-              {"test":"datum['title']=='South Africa'","value":"#26C6DA"},
-              {"test":"datum['title']=='Nigeria'","value":"#996633"},
-              {"test":"datum['title']=='Yemen'","value":"#523278 "},
-              {"test":"datum['title']=='Algeria'","value":"#437ea0"},
-              {"test":"datum['title']=='Bangladesh'","value":"#d0de98"}
+              {"test": "datum['title']=='China'", "value": "#C85454"},
+              {"test": "datum['title']=='Brazil'", "value": "#5486C8"},
+              {"test": "datum['title']=='India'", "value": "#54C884"},
+              {"test": "datum['title']=='Egypt'", "value": "#ce9e65"},
+              {"test": "datum['title']=='Indonesia'", "value": "#C854B4"},
+              {"test": "datum['title']=='Vietnam'", "value": "#A9C854"},
+              {"test": "datum['title']=='Saudi Arabia'", "value": "#C89354"},
+              {"test": "datum['title']=='Mexico'", "value": "#324c78"},
+              {"test": "datum['title']=='Russia'", "value": "#54C8AE"},
+              {"test": "datum['title']=='Iran'", "value": "#c4aae4"},
+              {"test": "datum['title']=='United States'", "value": "#7E57C2"},
+              {
+                "test": "datum['title']=='Democratic Republic of Congo'",
+                "value": "#783232"
+              },
+              {"test": "datum['title']=='Thailand'", "value": "#C85482"},
+              {"test": "datum['title']=='Pakistan'", "value": "#32784b"},
+              {"test": "datum['title']=='South Africa'", "value": "#26C6DA"},
+              {"test": "datum['title']=='Nigeria'", "value": "#996633"},
+              {"test": "datum['title']=='Yemen'", "value": "#523278 "},
+              {"test": "datum['title']=='Algeria'", "value": "#437ea0"},
+              {"test": "datum['title']=='Bangladesh'", "value": "#d0de98"}
             ]
           }
         }
       },
+
+
       {
-        "mark": {
-          "type": "bar",
-          "size": 8,
-          "color": "#ffffff"
-        },
-        "encoding": {
-          "x": {
-            "field": "measures[1]"
-          }
-        }
+        "mark": {"type": "bar", "size": 8, "color": "#ffffff"},
+        "encoding": {"x": {"field": "measures[1]","aggregate": "sum"}}
       }
     ]
   },
-  "resolve": {
-    "scale": {
-      "x": "independent"
-    }
-  },
-  "config": {
-    "tick": {
-      "thickness": 10
-    }
-  }
+
+  "resolve": {"scale": {"x": "independent"}},
+
+  
+  "config": {"tick": {"thickness": 10}}
 }
