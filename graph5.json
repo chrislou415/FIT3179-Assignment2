@@ -34,6 +34,11 @@
       }},
 
     "tooltip": [
+      {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country"
+      },
       {"field": "Deaths", "type": "quantitative", "format": ","},
       {
         "field": "Road Deaths per Million Population",
