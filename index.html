@@ -58,10 +58,11 @@
         <div style="color: rgb(69, 131, 193);font-weight: 600;">Yizhen Chris Lou</div>
 
         October 10, 2022 - 11.36am
-    </div> </div>
+    </div>
+    </div>
 
 
- <!------------------------Profile Image----------------->
+    <!------------------------Profile Image----------------->
     <div>
         <img class="profile" src="image/profile.png" />
     </div>
@@ -78,8 +79,9 @@
         <li>World Road Number of Deaths (World Map)</li>
         <li>Top 20 Countries in Terms of Road Deaths in 2019 (Horizontal Bar Chart)</li>
         <li>Top 10 Most Populous Countries in 2019 (Bullet Chart).</li>
-        <li>Top 10 Population Road Death Rate in 2019 (Radial Plot)</li>
-        <li><span class ='China'>China</span> <span class ='India'>India</span> and <span class ='Brazil'>Brazil</span> Road Deaths per Million from 1990-2019 (Linear Graph)</li>
+        <li>Top 10 Population Road Death Rate in 2019 (Pie Plot)</li>
+        <li><span class='China'>China</span> <span class='India'>India</span> and <span class='Brazil'>Brazil</span>
+            Road Deaths per Million from 1990-2019 (Linear Graph)</li>
     </div>
 
     <br>
@@ -101,6 +103,11 @@
             road deaths in the world from 1990 to 2019 in the form of data that will hopefully help countries implement
             strong policies and enforcement so that smart road design, and strong public awareness campaigns can save
             millions of lives in the decades to come.
+
+            <br> <br> This content is based around a discussion of <B>which year A country with a lot of deaths doesn't
+                necessarily have a high death rate, it's all about population.</B> There are notes about key countries
+            to help
+            you to read them.
         </p>
     </div>
 
@@ -109,83 +116,131 @@
     <h2>Traffic Deaths Around the World</h2>
 
     <div id="first_chart"></div>
-    <div class="figuretext"><i>World Road Number of Deaths (Figure 1)</i></div>
+    <div class="figuretext"><i>World Road Number of Deaths 1990-2019 (Figure 1)</i></div>
 
     <div>
         <p>The total number of road deaths in the world is very high. This chart records the number of road traffic
-            fatalities for almost 30 years from 1990 to 2019. Since 1990, <span class ='China'>China</span> has had the highest number of road
+            fatalities for almost 30 years from 1990 to 2019. Since 1990, <span class='China'>China</span> has had the
+            highest number of road
             deaths in the world at 230,499, and in 2019, still with 25,025 deaths, it continues to be number one.
             <br><br>
-            Meanwhile, with the establishment of road safety laws, <span class ='Russia'>Russia</span> has dropped from the third highest level of
+            Meanwhile, with the establishment of road safety laws, <span class='Russia'>Russia</span> has dropped from
+            the third highest level of
             fatalities, from 39,298 in 1990, to 20,867 in 2019. This is profound proof that as time goes on and
             civilisation progresses, people will become safer and safer.
+            <br><br>
+            And since 2019 is the closest in time and has the highest number of deaths, the next are studied around
+            2019.
+
     </div>
 
     <!----------------------Vegalite 2-------------------------->
     <div id="second_chart"></div>
-    <div class="figuretext"><i>Top 20 Countries in Terms of Road Deaths in 2019  (Figure 2)</i></div>
+    <div class="figuretext"><i>Top 20 Countries in Terms of Road Deaths in 2019 (Figure 2)</i></div>
 
     <div>
         <p>Based on the above information, this content selects the top 20 countries with the highest 2019 fatality
             numbers and compares them side-by-side.
             <br><br>
-            As can be seen, <span class ='China'>China</span> is far ahead of the following countries in terms of road deaths, coming in first with
-            a figure of 25,025. second place goes to <span class ='India'>India</span> with 21,975. when using the Range Selection tool, the
-            differences between countries can be seen more clearly and when moving to 42,000, only <span class ='Brazil'>Brazil</span>, <span class ='India'>India</span> and
-            <span class ='China'>China</span> will remain. Although <span class ='Brazil'>Brazil</span> has a small population, it is still third in the world in 2019 in terms
+            As can be seen, <span class='China'>China</span> is far ahead of the following countries in terms of road
+            deaths, coming in first with
+            a figure of 25,025. second place goes to <span class='India'>India</span> with 21,975. when using the Range
+            Selection tool, the
+            differences between countries can be seen more clearly and when moving to 42,000, only <span
+                class='Brazil'>Brazil</span>, <span class='India'>India</span> and
+            <span class='China'>China</span> will remain. Although <span class='Brazil'>Brazil</span> has a small
+            population, it is still third in the world in 2019 in terms
             of fatalities, which is something that needs to be continuously improved for the country's road safety
     </div>
 
     <!----------------------Vegalite 3-------------------------->
-    <div id="third_chart"></div>
-    <div class="figuretext"><i>Top 10 Most Populous Countries in 2019  (Figure 3)</i></div>
+    <div id="fourth_chart"></div>
+    <div class="figuretext"><i>Top 10 Most Populous Countries in 2019 (Figure 3)</i></div>
     <div>
         <p>Moreover, the number of road deaths and the size of the country's population are also closely related. These
             are the 10 countries with the highest population numbers in 2019.
             <br><br>
-            Of these 10 countries, <span class ='China'>China</span>, with the highest population, is followed by countries such as <span class ='India'>India</span> and
-            <span class ='Indonesia'>Indonesia</span>.
+            Of these 10 countries, <span class='China'>China</span>, with the highest population, is followed by
+            countries such as <span class='India'>India</span> and
+            <span class='Indonesia'>Indonesia</span>.
             <br><br>
-            When there are too many people, perhaps more deaths are produced, in which <span class ='Russia'>Russia</span>, which has the smallest
+            When there are too many people, perhaps more deaths are produced, in which <span
+                class='Russia'>Russia</span>, which has the smallest
             population compared to the others, also has 20,867 traffic deaths.
 
     </div>
 
     <!----------------------Vegalite 4-------------------------->
-    <div id="fourth_chart"></div>
-    <div class="figuretext"><i>Top 10 Population Road Death Rate in 2019  (Figure 4)</i></div>
+    <div id="third_chart"></div>
+    <div class="figuretext"><i>Top 10 Population Road Death Rate in 2019 (Figure 4)</i></div>
     <div>
         <p>Secondly, the number of road deaths and the size of the country's population are also closely related. These
             are the 10 countries with the highest population numbers in 2019.
             <br><br>
-            Of these 10 countries, the highest population and highest number of deaths was <span class ='China'>China</span>, but surprisingly
-            <span class ='Brazil'>Brazil</span> was first in terms of deaths per million and mortality rate. <span class ='China'>China</span> has a road fatality rate of
-            0.0174, with 174 deaths per million, while <span class ='Brazil'>Brazil</span> has a fatality rate of 0.0211, with almost 212 deaths per
+            Of these 10 countries, the highest population and highest number of deaths was <span
+                class='China'>China</span>, but surprisingly
+            <span class='Brazil'>Brazil</span> was first in terms of deaths per million and mortality rate. <span
+                class='China'>China</span> has a road fatality rate of
+            0.0174, with 174 deaths per million, while <span class='Brazil'>Brazil</span> has a fatality rate of 0.0211,
+            with almost 212 deaths per
             million.
             <br><br>
-            Combining information from the internet with <span class ='Brazil'>Brazil's</span> national context, the <span class ='Brazil'>Braziian</span> government may be able
-            to develop a road management strategy to reduce the number of road deaths among the <span class ='Brazil'>Brazilian</span> people.
+            Combining information from the internet with <span class='Brazil'>Brazil's</span> national context, the
+            <span class='Brazil'>Braziian</span> government may be able
+            to develop a road management strategy to reduce the number of road deaths among the <span
+                class='Brazil'>Brazilian</span> people.
     </div>
 
 
     <!----------------------Vegalite 5-------------------------->
-    <h2><span class ='China'>China</span> <span class ='India'>India</span> and <span class ='Brazil'>Brazil</span></h2>
+    <h2><span class='China'>China</span> <span class='India'>India</span> and <span class='Brazil'>Brazil</span></h2>
     <div id="fifth_chart"></div>
-    <div class="figuretext"><i><span class ='China'>China</span> <span class ='India'>India</span> and <span class ='Brazil'>Brazil</span> Road Deaths per Million from 1990-2019 (Figure 5)</i></div>
+    <div class="figuretext"><i><span class='China'>China</span> <span class='India'>India</span> and <span
+                class='Brazil'>Brazil</span> Road Deaths per Million from 1990-2019 (Figure 5)</i></div>
     <div>
         <p>Finally, the three countries with the highest mortality rates are compared on a linear graph. The vertical
             coordinate is ROAD deaths per million and the horizontal coordinate is 1990-2019.
             million.
             <br><br>
-            This graph shows that although <span class ='China'>China</span> was previously shown to be first in overall deaths, averaged out per
-            million, the number of deaths in <span class ='Brazil'>Brazil</span> is close to the sum of deaths in <span class ='China'>China</span> and <span class ='India'>India</span> in 2019. <span class ='China'>China</span>, on
+            This graph shows that although <span class='China'>China</span> was previously shown to be first in overall
+            deaths, averaged out per
+            million, the number of deaths in <span class='Brazil'>Brazil</span> is close to the sum of deaths in <span
+                class='China'>China</span> and <span class='India'>India</span> in 2019. <span
+                class='China'>China</span>, on
             the other hand, peaked in 2004 with an average of 247 deaths per million people.
             <br><br>
             And because of the development of civilisation, the spread of technology and the beginning of road safety
             controls in various countries, the average number of deaths per million in these three countries is also
             slowly decreasing after 2010.
 
+
     </div>
+
+
+
+    <!------------------------Head line---------------------->
+    <hr class="headline" style="border:0ch;height: 1px;background-color:#4b49491f" />
+
+    <h2>Conclusion</h2>
+    <p>
+        The above also provides profound proof of the main point of our discussion, <b>that countries with higher death
+            tolls do not necessarily have higher mortality rates.</b> When we set the number of people at one million,
+        <span class='Brazil'>Brazil</span>, which ranked 8th in 2019, was at one point the country with the highest
+        mortality rate.
+
+        <br><br>So when we look at the
+        number of
+        deaths, we have to take into account the population base of the country. At the same time, as culture
+        advances,
+        technology develops and laws improve, the road fatality rate in every country is gradually decreasing every
+        year and
+        we hope that every driver and pedestrian will respect the rules of the road and cherish life.
+    </p>
+
+
+
+
+
 
     <!----------------------Engding Part------------------------->
     <hr class="baseline" style="border:0ch;height: 1px;;background-color:#413f3f37" />

@@ -45,6 +45,12 @@
         "type": "quantitative",
         "format": ".0f",
         "title": "Road Deaths per 1000,000"
+      },
+      {
+        "field": "Historical_Population",
+        "type": "quantitative",
+        "title": "Population",
+        "format": ","
       }
     ]
   }
